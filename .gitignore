@@ -1,0 +1,4 @@
+*.pyc 
+*.[osi]
+*.exe
+*.log
