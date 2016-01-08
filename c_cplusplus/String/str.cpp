@@ -1,18 +1,20 @@
 /*
  * str.cpp
  *
- *  Created on: 2016Äê1ÔÂ7ÈÕ
+ *  Created on: 2016å¹´1æœˆ7æ—¥
  *      Author: zhonghuiping
  */
 
 #include "str.h"
 
-str::str() {
+str::str()
+{
 	// TODO Auto-generated constructor stub
 
 }
 
-str::~str() {
+str::~str()
+{
 	// TODO Auto-generated destructor stub
 }
 

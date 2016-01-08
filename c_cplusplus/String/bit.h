@@ -1,7 +1,7 @@
 /*
  * bit.h
  *
- *  Created on: 2016Äê1ÔÂ7ÈÕ
+ *  Created on: 2016ï¿½ï¿½1ï¿½ï¿½7ï¿½ï¿½
  *      Author: zhonghuiping
  */
 

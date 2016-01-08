@@ -1,13 +1,14 @@
 /*
  * bit.cpp
  *
- *  Created on: 2016Äê1ÔÂ7ÈÕ
+ *  Created on: 2016å¹´1æœˆ7æ—¥
  *      Author: zhonghuiping
  */
 
 #include "bit.h"
 
-bit::bit() {
+bit::bit()
+{
 	// TODO Auto-generated constructor stub
 
 }
@@ -21,19 +22,20 @@ bit::bit() {
 void bit::test()
 {
 	bitset<16> s(63);
-	cout << "¶ş½øÖÆÖĞ1µÄ¸öÊı£º" << s.count() << endl;
-	cout << "¶ş½øÖÆµÄÎ»Êı£º" << s.size() << endl;
-	cout << "ÆäÖĞµÚ5Î»ÊÇ£º" << s[5] << endl;
-	cout << "²âÊÔÆäÖĞµÚ5Î»ÊÇ·ñÎª1£º" << (s.test(5) ? "Yes" : "NO") << endl;
-	cout << "×ª»¯³ÉÕûÊıÊÇ£º" << s.to_ulong() << endl;
+	cout << "äºŒè¿›åˆ¶ä¸­1çš„ä¸ªæ•°ï¼š" << s.count() << endl;
+	cout << "äºŒè¿›åˆ¶çš„ä½æ•°ï¼š" << s.size() << endl;
+	cout << "å…¶ä¸­ç¬¬5ä½æ˜¯ï¼š" << s[5] << endl;
+	cout << "æµ‹è¯•å…¶ä¸­ç¬¬5ä½æ˜¯å¦ä¸º1ï¼š" << (s.test(5) ? "Yes" : "NO") << endl;
+	cout << "è½¬åŒ–æˆæ•´æ•°æ˜¯ï¼š" << s.to_ulong() << endl;
 	s.reset(5);
-	cout << "²âÊÔÆäÖĞµÚ5Î»ÊÇ·ñÎª1£º" << (s.test(5) ? "Yes" : "NO") << endl;
-	cout << "×ª»¯³ÉÕûÊıÊÇ£º" << s.to_ulong() << endl;
-	cout << "×ª»¯³É×Ö·û´®ÊÇ£º" << s.to_string() << endl;
-	cout << "Î»¼¯£º" << s << endl;
+	cout << "æµ‹è¯•å…¶ä¸­ç¬¬5ä½æ˜¯å¦ä¸º1ï¼š" << (s.test(5) ? "Yes" : "NO") << endl;
+	cout << "è½¬åŒ–æˆæ•´æ•°æ˜¯ï¼š" << s.to_ulong() << endl;
+	cout << "è½¬åŒ–æˆå­—ç¬¦ä¸²æ˜¯ï¼š" << s.to_string() << endl;
+	cout << "ä½é›†ï¼š" << s << endl;
 }
 
-bit::~bit() {
+bit::~bit()
+{
 	// TODO Auto-generated destructor stub
 }
 

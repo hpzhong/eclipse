@@ -1,7 +1,7 @@
 /*
  * str.h
  *
- *  Created on: 2016Äê1ÔÂ7ÈÕ
+ *  Created on: 2016å¹´1æœˆ7æ—¥
  *      Author: zhonghuiping
  */
 

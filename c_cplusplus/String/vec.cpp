@@ -1,21 +1,24 @@
 /*
  * vec.cpp
  *
- *  Created on: 2016Äê1ÔÂ7ÈÕ
+ *  Created on: 2016å¹´1æœˆ7æ—¥
  *      Author: zhonghuiping
  */
 
 #include "vec.h"
 
-vec::vec() {
+vec::vec()
+{
 	// TODO Auto-generated constructor stub
 
 }
 
-vec::~vec() {
+vec::~vec()
+{
 	// TODO Auto-generated destructor stub
 }
-void vec::sample() {
+void vec::sample()
+{
 	vector<int> ss(10, 3);
 	cout << ss.size() << endl;
 	cout << ss.empty() << endl;
@@ -41,7 +44,8 @@ void vec::sample() {
 	cout << endl;
 
 }
-void vec::input() {
+void vec::input()
+{
 	//String
 	vector<string> str;
 	string word;
@@ -54,7 +58,8 @@ void vec::input() {
 		cout << str[i] << endl;
 	}
 }
-void vec::test() {
+void vec::test()
+{
 	vector<int> s(5);
 	cout << "##########################" << endl;
 	for (vector<int>::const_iterator iter = s.begin(); iter < s.end(); iter++) {

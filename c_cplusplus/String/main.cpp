@@ -1,14 +1,15 @@
 /*
  * main.cpp
  *
- *  Created on: 2016Äê1ÔÂ7ÈÕ
+ *  Created on: 2016å¹´1æœˆ7æ—¥
  *      Author: zhonghuiping
  */
 #include "vec.h"
 #include "str.h"
 #include "bit.h"
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
 	vec::sample();
 	vec::test();
 	bit::test();
