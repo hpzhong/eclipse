@@ -1,7 +1,7 @@
 /*
  * bit.h
  *
- *  Created on: 2016��1��7��
+ *  Created on: 2016年1月7日
  *      Author: zhonghuiping
  */
 
