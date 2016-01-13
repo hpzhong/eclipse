@@ -1,7 +1,7 @@
 /*
  * MyString.cpp
  *
- *  Created on: 2016Äê1ÔÂ5ÈÕ
+ *  Created on: 2016å¹´1æœˆ5æ—¥
  *      Author: zhonghuiping
  */
 #include "MyString.h"
@@ -133,4 +133,9 @@ MyString& MyString::operator+=(const char *str) {
 ostream& operator<<(ostream &cou, const MyString &ms)
 {
 	cou<<ms.p;
+	return cou;
+}
+MyString operator+(const char *buf, const MyString &ms)
+{
+	return MyString(buf, ms.p);
 }

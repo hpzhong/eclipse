@@ -30,8 +30,8 @@ int main(int argc, char **argv) {
 #else
 	MyString my = "Hello, c++";
 	MyString ms = "Hello, C++";
-	my = my + my + my;
-	cout<<my<<endl;
+	my = "Usage:" + my;
+	cout << my << endl;
 #endif
 	return 0;
 }

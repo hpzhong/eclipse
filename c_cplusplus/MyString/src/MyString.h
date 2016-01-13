@@ -1,7 +1,7 @@
 /*
  * MyString.h
  *
- *  Created on: 2016Äê1ÔÂ5ÈÕ
+ *  Created on: 2016å¹´1æœˆ5æ—¥
  *      Author: zhonghuiping
  */
 
@@ -33,6 +33,7 @@ public:
 	bool operator!=(const char *);
 	char& operator[](const int index);
 	friend ostream& operator<<(ostream&, const MyString &);
+	friend MyString operator+(const char *, const MyString &);
 
 private:
 	MyString(const char *, const char *);
@@ -42,5 +43,5 @@ private:
 
 #endif /* MYSTRING_H_ */
 /*
- * ÎÒ°¡ËÜÁÏ´ü·É»úÀ­ÈøÉ£µÂÀ¼·Ö¾Ö°¢Â¡Ë÷µØ·½
+ * ï¿½Ò°ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½É£ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾Ö°ï¿½Â¡ï¿½ï¿½ï¿½Ø·ï¿½
  */

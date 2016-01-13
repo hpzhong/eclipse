@@ -1,7 +1,7 @@
 /*
  * Student.h
  *
- *  Created on: 2015Äê12ÔÂ24ÈÕ
+ *  Created on: 2015å¹´12æœˆ24æ—¥
  *      Author: zhonghuiping
  */
 
