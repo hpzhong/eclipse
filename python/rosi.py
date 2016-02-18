@@ -5,14 +5,19 @@ import urllib
 import urllib2
 import re
 import os
+import random
 
 class Spider:
     def __init__(self, siteURL):
         self.siteURL = siteURL 
-        self.user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'
+    def get_headers(self):
+        f = open("user_agent_list.txt",'r')
+        self.user_agent_list =f.readlines()
+        self.user_agent = self.user_agent_list[random.randint(0,len(self.user_agent_list)-1)][:-1]
         # init headers
         self.headers = {'User-Agent' : self.user_agent}
-
+        f.close()
+    
     def getPage(self, name):
         url = self.siteURL + name
         print url
@@ -22,9 +27,10 @@ class Spider:
             return response.read().decode('utf-8')
         except urllib2.URLError,e:
             if hasattr(e,"reason"):
-                print url + "linked fail, error reason is " + e.reason
+                print url + u" linked fail, error reason is " + e.reason
                 return None
     def getAllImg(self, name):
+        self.get_headers()
         page = self.getPage(name)
         # print page
         if(page is not None):
@@ -44,6 +50,7 @@ class Spider:
         data = u.read()
         f = open(fileName, 'wb')
         f.write(data)
+        print "get from " +imageURL
         print "Saving " + fileName
         f.close()
     def mkdir(self,path):
