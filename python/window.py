@@ -1,7 +1,7 @@
 '''
 @author: zhonghuiping
 '''
-from Tkinter import *
+from tkinter import *
 import time
 
 class Application(Frame):

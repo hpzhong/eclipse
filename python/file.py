@@ -6,10 +6,10 @@ file.write("Hello, World")
 file.close()
 
 try:
-    fn = raw_input("Enter file name:")
+    fn = input("Enter file name:")
     fo = open(fn, 'r')
     for el in fo:
-        print el, 
+        print(el, end=' ') 
     fo.close()
-except IOError, e:
-    print "file open error:", e
+except IOError as e:
+    print("file open error:", e)

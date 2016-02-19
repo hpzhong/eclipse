@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 __author__ = 'kaibr'
 
-import urllib
-import urllib2
+import urllib.request, urllib.parse, urllib.error
+import urllib.request, urllib.error, urllib.parse
 import re
 import os
 import random
@@ -20,14 +20,14 @@ class Spider:
     
     def getPage(self, name):
         url = self.siteURL + name
-        print url
-        request = urllib2.Request(url, headers = self.headers)
+        print(url)
+        request = urllib.request.Request(url, headers = self.headers)
         try:
-            response = urllib2.urlopen(request)
+            response = urllib.request.urlopen(request)
             return response.read().decode('utf-8')
-        except urllib2.URLError,e:
+        except urllib.error.URLError as e:
             if hasattr(e,"reason"):
-                print url + u" linked fail, error reason is " + e.reason
+                print(url + " linked fail, error reason is " + e.reason)
                 return None
     def getAllImg(self, name):
         self.get_headers()
@@ -38,33 +38,33 @@ class Spider:
             items = re.findall(pattern, page)
             self.saveImgs(items,name)
     def saveImgs(self,images,name):
-        print "Found %d pictures" % len(images)
+        print("Found %d pictures" % len(images))
         self.mkdir(name)
-        print "Pleas waiting, pictures are saving ..."
+        print("Pleas waiting, pictures are saving ...")
         for imageURL in images:
             # print imageURL
             fileName = name +'/'+imageURL.split('/')[-1]
             self.saveImg(imageURL,fileName)
     def saveImg(self,imageURL,fileName):
-        u = urllib.urlopen(imageURL)
+        u = urllib.request.urlopen(imageURL)
         data = u.read()
         f = open(fileName, 'wb')
         f.write(data)
-        print "get from " +imageURL
-        print "Saving " + fileName
+        print("get from " +imageURL)
+        print("Saving " + fileName)
         f.close()
     def mkdir(self,path):
         path = path.strip()
         isExists = os.path.exists(path)
         if not isExists:
-            print "Create directory: " + path
+            print("Create directory: " + path)
             os.makedirs(path)
             return True
         else:
-            print "The directory " + path + "is created"
+            print("The directory " + path + "is created")
             return False
 if __name__ == "__main__":
     spider = Spider('http://www.mmxyz.net/')
     for i in range(1500, 1501):
         spider.getAllImg("rosi-%d"%i)
-    print "END"
+    print("END")

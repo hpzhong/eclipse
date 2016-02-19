@@ -11,17 +11,17 @@ ls = os.linesep
 # get filename
 while True:
     if os.path.exists('tmp1.txt'):
-        print "ERROR: '%s' already exists" % 'tmp1.txt'
+        print("ERROR: '%s' already exists" % 'tmp1.txt')
     else:
         break
 
 # get file content (text) lines
 all = []
-print "\nEnter lines ('.' by itself to quit).\n"
+print("\nEnter lines ('.' by itself to quit).\n")
 
 # loop until user terminates input
 while True:
-    entry = raw_input('> ')
+    entry = input('> ')
     if entry == '.':
         break
     else:
@@ -31,4 +31,4 @@ while True:
 fobj = open('tmp1.txt', 'w')
 fobj.writelines(['%s%s' % (x, ls) for x in all])
 fobj.close()
-print 'DONE!'
+print('DONE!')
