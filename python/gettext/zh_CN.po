@@ -5,11 +5,11 @@
 # root <jxwazxzhp@126.com>, 2016.
 #
 msgid ""
-msgstr ""
+msgstr "sss"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-23 17:04+0800\n"
-"PO-Revision-Date: 2016-02-23 17:04+0800\n"
+"POT-Creation-Date: 2016-02-24 19:44+0800\n"
+"PO-Revision-Date: 2016-02-24 19:45+0800\n"
 "Last-Translator: root <jxwazxzhp@126.com>\n"
 "Language-Team: Chinese (simplified)\n"
 "Language: zh_CN\n"
@@ -17,21 +17,30 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gettext.py:13
-msgid "This is a translatable string."
-msgstr "这是一个可以翻译的字符串。"
+#: tk.py:15 tk.py:36
+msgid "Hello World!"
+msgstr "世界，你好！"
 
-#: gettext.py:14
-#, python-format
-msgid "I have %(num)d boxes."
-msgstr "我有%(num)d个箱子。"
+#: tk.py:16
+msgid "This is my GUI program."
+msgstr "这是我的GUI程序。"
 
-#: gettext.py:15
-#, python-format
-msgid "I have %d cats."
-msgstr "我有%d只猫。"
+#: tk.py:18
+msgid "Hello"
+msgstr "你好"
 
-#: gettext.py:16
-#, python-format
-msgid "Therer are %(num)d cats in box N.O. %(seq)d."
-msgstr "这里有%(num)d只猫在第%(seq)d只箱子里。"
+#: tk.py:25
+msgid "Music"
+msgstr "音乐"
+
+#: tk.py:26
+msgid "Video"
+msgstr "视频"
+
+#: tk.py:34
+msgid "Quit"
+msgstr "退出"
+
+#: tk.py:36
+msgid "Hello Python"
+msgstr "你好, Python"
