@@ -1,0 +1,3 @@
+xgettext -d gettext -o gettext.pot gettext.py
+msginit -l zh_CN -o zh_CN.po -i gettext.pot
+msgfmt -c -v -o testapp.mo zh_CN.po
